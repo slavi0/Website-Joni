@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КЕФал</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="logo">
+                <i class="fas fa-fish"></i>
+                <span>КЕФал</span>
+            </div>
+            <ul class="nav-links">
+                <li data-target="home" class="active"><i class="fas fa-home"></i> <span>Начало</span></li>
+                <li data-target="plan"><i class="fas fa-bullseye"></i> <span>Моят План</span></li>
+                <li data-target="tasks"><i class="fas fa-tasks"></i> <span>Задачи</span></li>
+                <li data-target="housing"><i class="fas fa-home"></i> <span>Жилище</span></li>
+                <li data-target="work"><i class="fas fa-briefcase"></i> <span>Работа и Финанси</span></li>
+                <li data-target="education"><i class="fas fa-graduation-cap"></i> <span>Образование</span></li>
+                <li data-target="health"><i class="fas fa-heartbeat"></i> <span>Здраве</span></li>
+                <li data-target="documents"><i class="fas fa-file-alt"></i> <span>Документи</span></li>
+                <li data-target="support"><i class="fas fa-users"></i> <span>Хора и Подкрепа</span></li>
+                <li data-target="mood"><i class="fas fa-smile"></i> <span>Дневник на Настроението</span></li>
+                <li data-target="sos" class="sos-link"><i class="fas fa-exclamation-triangle"></i> <span>SOS</span></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="content-area">
+            
+            <!-- Section: Home -->
+            <section id="home" class="page-section active">
+                <header>
+                    <h1>Начало</h1>
+                    <p>Добре дошли във вашия личен портал</p>
+                </header>
+                <div class="card glass">
+                    <h2>Общ Прогрес</h2>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" id="main-progress"></div>
+                    </div>
+                    <p class="progress-text">35% завършени цели</p>
+                </div>
+            </section>
+
+            <!-- Section: Plan -->
+            <section id="plan" class="page-section">
+                <header>
+                    <h1>Моят план</h1>
+                    <p>Вашата стратегия за успех</p>
+                </header>
+                <div class="grid-2">
+                    <div class="card glass border-blue">
+                        <i class="fas fa-calendar-alt section-icon"></i>
+                        <h2>Цели за 3 месеца</h2>
+                        <ul>
+                            <li>Намиране на стабилна работа</li>
+                            <li>Уреждане на документи</li>
+                        </ul>
+                    </div>
+                    <div class="card glass border-purple">
+                        <i class="fas fa-calendar-check section-icon"></i>
+                        <h2>Цели за 6 месеца</h2>
+                        <ul>
+                            <li>Наемане на самостоятелно жилище</li>
+                            <li>Записване на курс</li>
+                        </ul>
+                    </div>
+                    <div class="card glass border-green">
+                        <i class="fas fa-dumbbell section-icon"></i>
+                        <h2>Силни страни</h2>
+                        <ul class="tag-list">
+                            <li>Организираност</li>
+                            <li>Упоритост</li>
+                            <li>Комуникативност</li>
+                        </ul>
+                    </div>
+                    <div class="card glass border-red">
+                        <i class="fas fa-exclamation-circle section-icon"></i>
+                        <h2>Рискове</h2>
+                        <ul>
+                            <li>Финансови затруднения</li>
+                            <li>Липса на време</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Tasks -->
+            <section id="tasks" class="page-section">
+                <header>
+                    <h1>Задачи</h1>
+                    <p>Дневни и седмични задачи</p>
+                </header>
+                <div class="task-container">
+                    <div class="task-list glass">
+                        <h3>Дневни Задачи</h3>
+                        <div class="task-item">
+                            <input type="checkbox" id="t1">
+                            <label for="t1">Преглед на обяви за работа</label>
+                            <span class="badge in-progress">В процес</span>
+                        </div>
+                        <div class="task-item">
+                            <input type="checkbox" id="t2" checked>
+                            <label for="t2">Попълване на дневника</label>
+                            <span class="badge done">Готово</span>
+                        </div>
+                    </div>
+                    <div class="task-list glass">
+                        <h3>Седмични Задачи</h3>
+                        <div class="task-item">
+                            <input type="checkbox" id="t3">
+                            <label for="t3">Среща с консултант</label>
+                            <span class="badge todo">Започнато</span>
+                            <span class="deadline"><i class="fas fa-clock"></i> Петък</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Housing -->
+            <section id="housing" class="page-section">
+                <header>
+                    <h1>Жилище</h1>
+                    <p>Управление на жилищни въпроси</p>
+                </header>
+                <div class="grid-2">
+                    <div class="card glass">
+                        <h2>Как да намеря жилище</h2>
+                        <p>Стъпки и платформи за търсене на квартири.</p>
+                        <button class="btn btn-primary">Виж повече</button>
+                    </div>
+                    <div class="card glass">
+                        <h2>Разходи за жилище</h2>
+                        <p>Наем, консумативи, депозити.</p>
+                        <button class="btn btn-primary">Калкулатор</button>
+                    </div>
+                    <div class="card glass">
+                        <h2>Документи и условия</h2>
+                        <p>Какво трябва да знаете преди подписване на договор.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Work & Finance -->
+            <section id="work" class="page-section">
+                <header>
+                    <h1>Работа и финанси</h1>
+                    <p>Кариерно развитие и личен бюджет</p>
+                </header>
+                <div class="grid-3">
+                    <div class="card glass">
+                        <i class="fas fa-compass section-icon"></i>
+                        <h2>Кариерна ориентация</h2>
+                        <ul class="link-list">
+                            <li><a href="#">Тест за интереси и умения</a></li>
+                            <li><a href="#">Професии според образование</a></li>
+                        </ul>
+                    </div>
+                    <div class="card glass">
+                        <i class="fas fa-search section-icon"></i>
+                        <h2>Търсене на работа</h2>
+                        <ul class="link-list">
+                            <li><a href="#">Обяви</a></li>
+                            <li><a href="#">Как да направя CV</a></li>
+                            <li><a href="#">Мотивационно съобщение</a></li>
+                        </ul>
+                    </div>
+                    <div class="card glass">
+                        <i class="fas fa-wallet section-icon"></i>
+                        <h2>Лични финанси</h2>
+                        <p>Управление на бюджета и задържане на работа.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Education -->
+            <section id="education" class="page-section">
+                <header>
+                    <h1>Образование</h1>
+                    <p>Продължаване на обучението</p>
+                </header>
+                <div class="card glass">
+                    <h2>Избор на образователен път</h2>
+                    <ul class="info-list">
+                        <li><strong>Възможности:</strong> Курсове, университети, професионално обучение.</li>
+                        <li><strong>Как да се справя:</strong> Методи за ефективно учене и наваксване на пропуски.</li>
+                        <li><strong>Помощ:</strong> Къде да търся съдействие.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section: Health -->
+            <section id="health" class="page-section">
+                <header>
+                    <h1>Здраве</h1>
+                    <p>Грижа за себе си</p>
+                </header>
+                <div class="grid-2">
+                    <div class="card glass border-green">
+                        <h2>Личен лекар</h2>
+                        <p>Информация за здравната система и вашия лекар.</p>
+                    </div>
+                    <div class="card glass border-green">
+                        <h2>Базови здравни умения</h2>
+                        <p>Превенция и първи стъпки при проблем.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Documents -->
+            <section id="documents" class="page-section">
+                <header>
+                    <h1>Документи</h1>
+                    <p>Вашата администрация</p>
+                </header>
+                <div class="tags-container glass">
+                    <span class="tag">Лични документи</span>
+                    <span class="tag">Образователни</span>
+                    <span class="tag">Здравни</span>
+                    <span class="tag">Трудови</span>
+                    <span class="tag">Жилищни</span>
+                </div>
+            </section>
+
+            <!-- Section: Support -->
+            <section id="support" class="page-section">
+                <header>
+                    <h1>Хора и подкрепа</h1>
+                    <p>Вашата мрежа</p>
+                </header>
+                <div class="card glass">
+                    <h2>Моята мрежа от хора</h2>
+                    <div class="people-grid">
+                        <div class="person">
+                            <div class="avatar">И</div>
+                            <p>Иван (Ментор)</p>
+                        </div>
+                        <div class="person">
+                            <div class="avatar">М</div>
+                            <p>Мария (Приятел)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Mood -->
+            <section id="mood" class="page-section">
+                <header>
+                    <h1>Дневник на Настроението</h1>
+                    <p>Как се чувстваш днес?</p>
+                </header>
+                <div class="card glass text-center">
+                    <div class="mood-selector">
+                        <button class="mood-btn" data-mood="great">😄</button>
+                        <button class="mood-btn" data-mood="good">🙂</button>
+                        <button class="mood-btn" data-mood="neutral">😐</button>
+                        <button class="mood-btn" data-mood="bad">☹️</button>
+                        <button class="mood-btn" data-mood="terrible">😢</button>
+                    </div>
+                    <p id="current-mood-text">Изберете настроение</p>
+                </div>
+            </section>
+
+            <!-- Section: SOS -->
+            <section id="sos" class="page-section">
+                <header>
+                    <h1 class="text-red">SOS</h1>
+                    <p>Спешна помощ и насоки</p>
+                </header>
+                <div class="sos-grid">
+                    <div class="card glass sos-card border-red">
+                        <i class="fas fa-home"></i>
+                        <h3>Останах без място за живеене</h3>
+                        <button class="btn btn-danger">Виж стъпки</button>
+                    </div>
+                    <div class="card glass sos-card border-red">
+                        <i class="fas fa-user-slash"></i>
+                        <h3>Загубих работа</h3>
+                        <button class="btn btn-danger">Виж стъпки</button>
+                    </div>
+                    <div class="card glass sos-card border-red">
+                        <i class="fas fa-fist-raised"></i>
+                        <h3>Имам конфликт/насилие</h3>
+                        <button class="btn btn-danger">Виж стъпки</button>
+                    </div>
+                    <div class="card glass sos-card border-red">
+                        <i class="fas fa-briefcase-medical"></i>
+                        <h3>Имам здравен проблем</h3>
+                        <button class="btn btn-danger">Виж стъпки</button>
+                    </div>
+                    <div class="card glass sos-card border-red">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                        <h3>Имам дълг</h3>
+                        <button class="btn btn-danger">Виж стъпки</button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
